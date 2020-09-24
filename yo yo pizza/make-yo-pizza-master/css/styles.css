@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+  background-image: url("pizza img.jpg");
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+#pizzaForm {
+  display: none;
+}
+
+/* Buttons
+===================*/
+
+.btn-success {
+  margin-top: 50px;
+  background-color: red;
+  border: none;
+  width: 50%;
+}
+
+.btn-success:hover {
+  background-color: white;
+  border: #b20000;
+  color: #b20000;
+}
+
+.btn-success:focus {
+  background-color: white;
+  border: #b20000;
+  color: #b20000;
+}
+
+.btn-primary {
+  background-color: white;
+  border: #b20000;
+  color: #b20000;
+  border: solid #b20000;
+}
+
+.btn-primary:hover {
+  background-color: #b20000;
+  color: white;
+  border: solid #b20000;
+}
+
+.btn-success:focus {
+  background-color: white;
+  border: #b20000;
+  color: #b20000;
+  box-shadow: none;
+}
+
+.buttonCenter {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Styling that shows the order info and price
+===================*/
+
+#orderSummary {
+  text-align: center;
+  display: none;
+  padding-bottom: 200px;
+}

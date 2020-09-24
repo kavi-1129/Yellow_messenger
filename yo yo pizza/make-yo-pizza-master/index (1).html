@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YoYo Pizza</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Make Your Pizza</h1>
+      <hr>
+      <div class="orderPizza">
+        <div class="buttonCenter">
+          <button type="button" class="btn btn-lg btn-success" id="startOrder" name="button">Now you can make your order!!</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <form id="pizzaForm">
+            <div class="form-group">
+            	Customer Name:&nbsp;&nbsp;
+    <Input type="text" Name="Customer Name" Size=15 Maxlength=15 id="v">
+    <br>
+    Phone:&nbsp;
+    <Input type="Number" Name="Phone" id="v1">
+    <br>
+    Address:<br>
+    <Textarea Name="Address" Rows="1" Cols="30" id="v2"></Textarea>
+    <br>
+              <label for="size">What size would you like?</label>
+              <select id="size" class="form-control">
+                <option value="small">Small | Rs.100.00</option>
+                <option value="medium">Medium | Rs.150.00</option>
+                <option value="large">Large | Rs.300.00</option>
+              </select>
+            </div>
+            <br>
+            <label>Dietary Preferences</label>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Vegan Love!</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Vegetarian</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Gluten Free Por Favor</label>
+            </div>
+            <br>
+            <div id="new-toppings">
+              <label id="topping">Pizza Toppings</label>
+              <p>All pizzas come with cheese and marinara sauce. If you want additional toppings cost Rs.50.00 each.</p>
+            </div>
+            <div class="buttonCenter">
+              <button type="button" class="btn btn-default" id="add-topping">Add more toppings</button><br><br>
+            </div>
+            <hr>
+            <h4>When you are finished</h4>
+            <div class="buttonCenter">
+              <button type="submit" class="btn btn-primary btn-lg">Place Your Order</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="orderSummary">
+        <div class="totalCost">
+          <h2>Total cost for your pizza is <span id="totalCost"></span>.00.</h2>
+        </div>
+        	<button  onclick="testVariable()">Details</button> <br />
+    <span id="spanResult"></span><br/>
+    <span id="spanResult1"></span><br />
+    <span id="spanResult2">
+    		</span>
+    		
+        <br></br>
+      </div>
+    </div>
+  </body>
+</html>
